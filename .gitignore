@@ -17,6 +17,7 @@ assets
 node_modules
 package-lock.json
 yarn.lock
+bootstrap.js
 
 # Misc
 .DS_Store

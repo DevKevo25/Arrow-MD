@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 baa6d33f6c7b933f260d031f3725e361b9bb91ff Kevoloves25 <kakemu84@gmail.com> 1776951435 +0300	commit (initial): reduced files
+baa6d33f6c7b933f260d031f3725e361b9bb91ff 0000000000000000000000000000000000000000 Kevoloves25 <kakemu84@gmail.com> 1776951455 +0300	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 baa6d33f6c7b933f260d031f3725e361b9bb91ff Kevoloves25 <kakemu84@gmail.com> 1776951455 +0300	Branch: renamed refs/heads/master to refs/heads/main
+baa6d33f6c7b933f260d031f3725e361b9bb91ff 195183aada0f8a121ad95b09e022724f2cb2cb6b Kevoloves25 <kakemu84@gmail.com> 1776951619 +0300	commit: added docker
