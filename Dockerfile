@@ -23,7 +23,7 @@ RUN npm install && npm cache clean --force
 # Copy the rest of the application
 COPY . .
 
-# Expose port (matches CypherX)
+# Expose port
 EXPOSE 3000
 
 # Set production environment
