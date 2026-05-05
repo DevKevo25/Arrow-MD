@@ -1,33 +1,27 @@
-FROM node:lts
+# Build stage
+FROM node:lts AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production && npm cache clean --force
 
-# Install system dependencies for media, stickers, sharp, ffmpeg, etc.
+# Runtime stage
+FROM node:lts-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     imagemagick \
     webp \
-    libvips-dev \
-    python3 \
-    make \
-    g++ \
+    libvips \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Set working directory
 WORKDIR /app
-
-# Copy package files first
-COPY package*.json ./
-
-# Install Node.js dependencies
-RUN npm install && npm cache clean --force
-
-# Copy the rest of the application
+COPY --from=builder /app/node_modules ./node_modules
 COPY . .
 
-# Expose port
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 --gid 1001 botuser && \
+    chown -R botuser:nodejs /app
+
+USER botuser
 EXPOSE 3000
-
-# Set production environment
 ENV NODE_ENV=production
-
-# Start the bot
 CMD ["npm", "run", "start"]
