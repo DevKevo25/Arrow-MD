@@ -6,7 +6,6 @@ baileys_auth
 temp
 .bootstrap_tmp_*
 
-.git
 # Auto-pulled from dev repo on first start — not stored in public repo
 commands
 lib
@@ -23,4 +22,3 @@ bootstrap.js
 # Misc
 .DS_Store
 *.log
-.git
