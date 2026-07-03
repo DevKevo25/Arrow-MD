@@ -2,6 +2,7 @@
 // ownerNumber is the single source of truth — never stored in settings.json
 
 // Load .env silently — no dotenvx noise whatsoever
+require('dotenv').config();
 try {
   const fs   = require('fs');
   const path = require('path');
@@ -23,7 +24,7 @@ module.exports = {
   defaultPrefix: '.',
   defaultOwnerName: 'Kevo Loves',
   ownerNumber: '254xxx',
-  sessionID: process.env.SESSION_ID || ''
+  sessionID: process.env.SESSION_ID || "",
   // Arrow-MD≈
   // get session ID from https://arrow-md-pair.onrender.com
 };

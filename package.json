@@ -1,6 +1,6 @@
 {
   "name": "arrow-md",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Arrow-MD WhatsApp Bot by Kevo Loves",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,7 @@
   "dependencies": {
     "@distube/ytdl-core": "^4.16.12",
     "@hapi/boom": "^10.0.1",
-    "@itsliaaa/baileys": "github:itsliaaa/baileys",
-    "@whiskeysockets/baileys": "^6.7.19",
+    "@whiskeysockets/baileys": "^7.0.0-rc13",
     "adm-zip": "^0.5.17",
     "axios": "^1.15.0",
     "better-sqlite3": "^12.11.1",
