@@ -2,7 +2,7 @@
 // ownerNumber is the single source of truth — never stored in settings.json
 
 // Load .env silently — no dotenvx noise whatsoever
-require('dotenv').config();
+require('dotenv').config({ quiet: true });
 try {
   const fs   = require('fs');
   const path = require('path');
