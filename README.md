@@ -33,7 +33,7 @@
 
 > ARROW-MD SESSION PAIRING
 <p align="center">
-  <a href="https://devkevo-arrow-md-pair-site.hf.space" target="_blank">
+  <a href="https://arrow-md-pair.onrender.com" target="_blank">
     <img alt="Pair Code 1" src="https://img.shields.io/badge/PAIR_CODE_ALPHA-100000?style=for-the-badge&logo=sensu&logoColor=white&labelColor=001100&color=00ffaa"/>
   </a>
 </p>

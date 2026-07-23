@@ -1,8 +1,0 @@
-node_modules
-.git
-.env
-baileys_auth
-data
-.session*
-*.log
-*.zip
