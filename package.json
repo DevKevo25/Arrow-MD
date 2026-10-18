@@ -1,6 +1,6 @@
 {
   "name": "arrow-md",
-  "version": "2.0.3",
+  "version": "1.0.4",
   "description": "Arrow-MD WhatsApp Bot by Kevo Loves",
   "main": "index.js",
   "scripts": {
@@ -38,6 +38,7 @@
     "telegraf": "^4.16.3",
     "youtube-dl-exec": "^3.1.9",
     "youtubei.js": "^17.2.0",
-    "yt-search": "^2.13.1"
+    "yt-search": "^2.13.1",
+    "node-fetch": "^2.7.0"
   }
 }
